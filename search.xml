@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>我的卡米尔操作集锦</title>
-    <url>/blog/2020/07/30/%E6%88%91%E7%9A%84%E5%8D%A1%E7%B1%B3%E5%B0%94%E6%93%8D%E4%BD%9C%E9%9B%86%E9%94%A6/</url>
+    <url>/2020/07/30/%E6%88%91%E7%9A%84%E5%8D%A1%E7%B1%B3%E5%B0%94%E6%93%8D%E4%BD%9C%E9%9B%86%E9%94%A6/</url>
     <content><![CDATA[<div style="position: relative; padding: 30% 45%;">
 <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" 
 src=
@@ -25,7 +25,7 @@ scrolling="no"></iframe>
   </entry>
   <entry>
     <title>Mware注册码</title>
-    <url>/blog/2020/07/30/blog_markdown/#%20VMware%E6%B3%A8%E5%86%8C%E7%A0%81/</url>
+    <url>/2020/07/30/blog_markdown/#%20VMware%E6%B3%A8%E5%86%8C%E7%A0%81/</url>
     <content><![CDATA[<h1 id="VMware注册码"><a href="#VMware注册码" class="headerlink" title="VMware注册码"></a>VMware注册码</h1><p>ZF3R0-FHED2-M80TY-8QYGC-NPKYF<br>YF390-0HF8P-M81RQ-2DXQE-M2UT6<br>ZF71R-DMX85-08DQY-8YMNC-PPHV8</p>
 ]]></content>
       <categories>
@@ -37,7 +37,7 @@ scrolling="no"></iframe>
   </entry>
   <entry>
     <title>Arch</title>
-    <url>/blog/2020/07/30/blog_markdown/Arch/</url>
+    <url>/2020/07/30/blog_markdown/Arch/</url>
     <content><![CDATA[<h1 id="Arch"><a href="#Arch" class="headerlink" title="Arch"></a>Arch</h1><h2 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h2><h1 id="笔记本连网"><a href="#笔记本连网" class="headerlink" title="笔记本连网"></a>笔记本连网</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">iwctl</span><br><span class="line">[iwd]# device list //列出所有的网络设备</span><br><span class="line">[iwd]# station wlan0 get-networks //过去可以使用的wifi wlan0 是我的无线网卡，不同设备名称可能不同</span><br><span class="line">[iwd]# static  wlan0 connct SSID//SSID 为wifi名称</span><br><span class="line">//输入密码之后，链接成功</span><br><span class="line">quit</span><br></pre></td></tr></table></figure>
 
 <h1 id="解决不能连ssh"><a href="#解决不能连ssh" class="headerlink" title="解决不能连ssh"></a>解决不能连ssh</h1><p>ss -lnt #查看ip信息</p>
@@ -74,7 +74,7 @@ scrolling="no"></iframe>
   </entry>
   <entry>
     <title>idea破解</title>
-    <url>/blog/2020/07/30/blog_markdown/#%20idea%E7%A0%B4%E8%A7%A3/</url>
+    <url>/2020/07/30/blog_markdown/#%20idea%E7%A0%B4%E8%A7%A3/</url>
     <content><![CDATA[<h1 id="idea破解"><a href="#idea破解" class="headerlink" title="idea破解"></a>idea破解</h1><p>code.39sd.cn</p>
 <p><a href="http://idea.lanyus.com/">http://idea.lanyus.com/</a></p>
 <p>lan yu</p>
@@ -88,7 +88,7 @@ scrolling="no"></iframe>
   </entry>
   <entry>
     <title>Manjaro安装配置手册</title>
-    <url>/blog/2020/07/30/blog_markdown/Manjaro%E9%85%8D%E7%BD%AE/</url>
+    <url>/2020/07/30/blog_markdown/Manjaro%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h2 id="Manjaro安装手册"><a href="#Manjaro安装手册" class="headerlink" title="Manjaro安装手册"></a>Manjaro安装手册</h2><p>Manjaro 是一个基于 Arch Linux 的 Linux 滚动发行版，用着挺舒服的。<br> 最大的特点，是包仓库很丰富，而且都很新。代价是偶尔会出些小毛病。</p>
 <p>我一年多的使用中，遇到过 qv2-ray 动态链接库炸掉的问题，没专门去找修复方法，好像是等了一两个月，升级了两个大版本才恢复。<br> 另一个就是 <a href="https://github.com/microsoft/vscode/issues/110322">VSCode - Incorrect locale ‘en-US’ used everywhere</a></p>
 <p>还遇到过 <code>libguestfs</code> 的一个问题：<code>vrit-v2v</code>/<code>virt-p2v</code> 两个工具被拆分出去，导致 manjaro 只能通过源码安装这俩货。这貌似目前仍旧没有解决。</p>
@@ -158,7 +158,7 @@ scrolling="no"></iframe>
   </entry>
   <entry>
     <title>Maven换源</title>
-    <url>/blog/2020/07/30/blog_markdown/Maven%E6%8D%A2%E6%BA%90/</url>
+    <url>/2020/07/30/blog_markdown/Maven%E6%8D%A2%E6%BA%90/</url>
     <content><![CDATA[<h2 id="Maven换源"><a href="#Maven换源" class="headerlink" title="Maven换源"></a>Maven换源</h2><p>（1）找到 apache-maven-3.5.2\conf 目录中的 settings.xml 文件</p>
 <p>（2） 修改maven 本地仓库地址,</p>
 <p>首先在D:\Program Files创建文件夹MavenRepository ；</p>
@@ -179,7 +179,7 @@ scrolling="no"></iframe>
   </entry>
   <entry>
     <title>Maven自动化的构建工具</title>
-    <url>/blog/2020/07/30/blog_markdown/Maven%E8%87%AA%E5%8A%A8%E5%8C%96%E7%9A%84%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/</url>
+    <url>/2020/07/30/blog_markdown/Maven%E8%87%AA%E5%8A%A8%E5%8C%96%E7%9A%84%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<h1 id="Maven自动化的构建工具"><a href="#Maven自动化的构建工具" class="headerlink" title="Maven自动化的构建工具"></a>Maven自动化的构建工具</h1><h2 id="第一章-Maven-简介"><a href="#第一章-Maven-简介" class="headerlink" title="第一章 Maven 简介"></a>第一章 Maven 简介</h2><h3 id="1-1-软件开发中的阶段"><a href="#1-1-软件开发中的阶段" class="headerlink" title="1.1 软件开发中的阶段"></a>1.1 软件开发中的阶段</h3><p>需要分析:分析项目具体完成的功能,有什么要求,具体怎么实现。</p>
 <p>设计阶段:根据分析的结果,设计项目的使用什么技术,解决难点。</p>
 <p>开发阶段：编码实现功能。编译代码。自我测试</p>
@@ -203,7 +203,7 @@ scrolling="no"></iframe>
   </entry>
   <entry>
     <title>懒人必备，IntelliJ IDEA中代码一键生成</title>
-    <url>/blog/2020/07/30/blog_markdown/dao%20service%20,%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90/</url>
+    <url>/2020/07/30/blog_markdown/dao%20service%20,%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90/</url>
     <content><![CDATA[<h1 id="懒人必备，IntelliJ-IDEA中代码一键生成"><a href="#懒人必备，IntelliJ-IDEA中代码一键生成" class="headerlink" title="懒人必备，IntelliJ IDEA中代码一键生成"></a>懒人必备，IntelliJ IDEA中代码一键生成</h1><p>EasyCode  是基于 IntelliJ IDEA  开发的代码生成插件，支持自定义任意模板（Java，html，js，xml）；只要是与数据库相关的代码都可以通过自定义模板来生成；支持数据库类型与 java 类型映射关系配置；支持同时生成生成多张表的代码，张表有独立的配置信息，完全的个性化定义，规则由你设置。</p>
 <p>我自己也稍微体验了一把，还是蛮方便的。</p>
 <h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a><strong>1.安装</strong></h2><p>首先点击 File-&gt;Settings-&gt;Plugins，然后搜索 EasyCode，如下：</p>
@@ -254,7 +254,7 @@ scrolling="no"></iframe>
   </entry>
   <entry>
     <title>SpringBoot</title>
-    <url>/blog/2020/08/04/blog_markdown/SpringBoot/</url>
+    <url>/2020/08/04/blog_markdown/SpringBoot/</url>
     <content><![CDATA[<h3 id="本项目为-spring-Boot系列文章"><a href="#本项目为-spring-Boot系列文章" class="headerlink" title="本项目为 spring Boot系列文章"></a>本项目为 spring Boot系列文章</h3><p><a href="https://996.icu/#/en_US"><img src="https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg" alt="Badge"></a><br><a href="https://github.com/996icu/996.ICU/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-Anti%20996-blue.svg" alt="LICENSE"></a><br><a href="https://join.slack.com/t/996icu/shared_invite/enQtNTg4MjA3MzA1MzgxLWQyYzM5M2IyZmIyMTVjMzU5NTE5MGI5Y2Y2YjgwMmJiMWMxMWMzNGU3NDJmOTdhNmRlYjJlNjk5ZWZhNWIwZGM"><img src="https://img.shields.io/badge/slack-996icu-green.svg" alt="Slack"></a></p>
 <hr>
 <hr>
@@ -339,7 +339,7 @@ scrolling="no"></iframe>
   </entry>
   <entry>
     <title>docker手册</title>
-    <url>/blog/2020/07/30/blog_markdown/docker%E6%89%8B%E5%86%8C/</url>
+    <url>/2020/07/30/blog_markdown/docker%E6%89%8B%E5%86%8C/</url>
     <content><![CDATA[<h1 id="docker手册"><a href="#docker手册" class="headerlink" title="docker手册"></a>docker手册</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//启动docker</span><br><span class="line">systemctl start docker</span><br><span class="line">//停止docker</span><br><span class="line">systemctl stop docker</span><br><span class="line">//查看docker是否启动</span><br><span class="line">systemctl status docker</span><br><span class="line">//设置开机自动启动</span><br><span class="line">systemctl enable docker</span><br></pre></td></tr></table></figure>
 
 <h3 id="2-5-容器的操作"><a href="#2-5-容器的操作" class="headerlink" title="2.5 容器的操作"></a>2.5 容器的操作</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 1. 运行容器</span><br><span class="line"># 简单操作</span><br><span class="line">docker run 镜像的标识|镜像名称[tag]</span><br><span class="line"># 常用的参数</span><br><span class="line">docker run -d -p  宿主机端口:容器端口 --name 容器名称 镜像的标识|镜像名称[tag]</span><br><span class="line"># -d: 代表后台运行容器</span><br><span class="line"># -p: 宿主机端口:容器端口: 为了映射当前Linux的端口和容器的端口</span><br><span class="line"># --name 容器名称: 指定容器的名称</span><br></pre></td></tr></table></figure>
@@ -364,7 +364,7 @@ scrolling="no"></iframe>
   </entry>
   <entry>
     <title>docker换源</title>
-    <url>/blog/2020/07/30/blog_markdown/docker%E6%8D%A2%E6%BA%90/</url>
+    <url>/2020/07/30/blog_markdown/docker%E6%8D%A2%E6%BA%90/</url>
     <content><![CDATA[<h1 id="docker换源"><a href="#docker换源" class="headerlink" title="docker换源"></a>docker换源</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo mkdir -p /etc/docker</span><br><span class="line">sudo tee /etc/docker/daemon.json &lt;&lt;-&#x27;EOF&#x27;</span><br><span class="line">&#123;</span><br><span class="line">  &quot;registry-mirrors&quot;: [&quot;https://dqdldy32.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br><span class="line">EOF</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure>
 
 <blockquote>
@@ -382,7 +382,7 @@ scrolling="no"></iframe>
   </entry>
   <entry>
     <title>idea常用（好用的）插件</title>
-    <url>/blog/2020/07/30/blog_markdown/idea%E5%B8%B8%E7%94%A8%EF%BC%88%E5%A5%BD%E7%94%A8%E7%9A%84%EF%BC%89%E6%8F%92%E4%BB%B6/</url>
+    <url>/2020/07/30/blog_markdown/idea%E5%B8%B8%E7%94%A8%EF%BC%88%E5%A5%BD%E7%94%A8%E7%9A%84%EF%BC%89%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<h1 id="idea常用（好用的）插件"><a href="#idea常用（好用的）插件" class="headerlink" title="idea常用（好用的）插件"></a>idea常用（好用的）插件</h1><h2 id="1、Lombok"><a href="#1、Lombok" class="headerlink" title="1、Lombok"></a>1、Lombok</h2><p>简化你的实体类不再写get/set方法，还能快速的实现builder模式，以及链式调用方法，总之就是为了简化实体类而生的插件。</p>
 <p><img src="https://img-blog.csdnimg.cn/img_convert/248e7c4d10bd8c87520557dfb83ce2d3.png" alt="idea 常用插件推荐"></p>
 <h2 id="2、Free-Mybatis-Plugin"><a href="#2、Free-Mybatis-Plugin" class="headerlink" title="2、Free Mybatis Plugin"></a>2、Free Mybatis Plugin</h2><p>一个提高mybatis编码的插件。实现了dao层跳转到xml层的跳转功能。</p>
@@ -435,7 +435,7 @@ scrolling="no"></iframe>
   </entry>
   <entry>
     <title>manjaro +arch源</title>
-    <url>/blog/2020/07/30/blog_markdown/manjaro%20+arch%E6%BA%90/</url>
+    <url>/2020/07/30/blog_markdown/manjaro%20+arch%E6%BA%90/</url>
     <content><![CDATA[<h1 id="manjaro-arch源"><a href="#manjaro-arch源" class="headerlink" title="manjaro +arch源"></a>manjaro +arch源</h1><p>sudo xed  /etc/pacman.conf</p>
 <p>[archlinuxcn]<br>SigLevel = Optional TrustAll<br>Server = <a href="http://mirrors.163.com/archlinux-cn/$arch">http://mirrors.163.com/archlinux-cn/$arch</a></p>
 ]]></content>
@@ -448,7 +448,7 @@ scrolling="no"></iframe>
   </entry>
   <entry>
     <title>manjaro初始化命令一条龙</title>
-    <url>/blog/2020/07/30/blog_markdown/manjaro%E5%88%9D%E5%A7%8B%E5%8C%96%E5%91%BD%E4%BB%A4%E4%B8%80%E6%9D%A1%E9%BE%99/</url>
+    <url>/2020/07/30/blog_markdown/manjaro%E5%88%9D%E5%A7%8B%E5%8C%96%E5%91%BD%E4%BB%A4%E4%B8%80%E6%9D%A1%E9%BE%99/</url>
     <content><![CDATA[<h1 id="manjaro初始化命令一条龙"><a href="#manjaro初始化命令一条龙" class="headerlink" title="manjaro初始化命令一条龙"></a>manjaro初始化命令一条龙</h1><pre><code>echo 正在备份默认安装源
 sudo cp /etc/pacman.conf /etc/pacman.conf.bak #备份源
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
@@ -577,7 +577,7 @@ sudo rm -f -r /tmp/Manjaro-linux/
   </entry>
   <entry>
     <title>安装zsh</title>
-    <url>/blog/2020/08/04/blog_markdown/zsh%E5%AE%89%E8%A3%85/</url>
+    <url>/2020/08/04/blog_markdown/zsh%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<h4 id="安装zsh"><a href="#安装zsh" class="headerlink" title="安装zsh"></a>安装zsh</h4><ul>
 <li>查看是否已经安装</li>
 </ul>
@@ -650,7 +650,7 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
   </entry>
   <entry>
     <title>github同步本地代码命令</title>
-    <url>/blog/2020/08/04/blog_markdown/%E5%90%8C%E6%AD%A5%E6%9C%AC%E5%9C%B0%E4%BB%A3%E7%A0%81/</url>
+    <url>/2020/08/04/blog_markdown/%E5%90%8C%E6%AD%A5%E6%9C%AC%E5%9C%B0%E4%BB%A3%E7%A0%81/</url>
     <content><![CDATA[<h1 id="github同步本地代码命令"><a href="#github同步本地代码命令" class="headerlink" title="github同步本地代码命令"></a>github同步本地代码命令</h1><p>git init</p>
 <p>git add .</p>
 <p>git commit -m ‘add test’</p>
@@ -667,7 +667,7 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
   </entry>
   <entry>
     <title>Object类、常用API</title>
-    <url>/blog/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/(%E6%97%A0%E5%9B%BE)Object%E7%B1%BB%E3%80%81%E5%B8%B8%E7%94%A8API/day01%E3%80%90Object%E7%B1%BB%E3%80%81%E5%B8%B8%E7%94%A8API%E3%80%91-%E7%AC%94%E8%AE%B0/</url>
+    <url>/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/(%E6%97%A0%E5%9B%BE)Object%E7%B1%BB%E3%80%81%E5%B8%B8%E7%94%A8API/day01%E3%80%90Object%E7%B1%BB%E3%80%81%E5%B8%B8%E7%94%A8API%E3%80%91-%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="day01【Object类、常用API】"><a href="#day01【Object类、常用API】" class="headerlink" title="day01【Object类、常用API】"></a>day01【Object类、常用API】</h1><h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><ul>
 <li>Object类</li>
 <li>Date类</li>
@@ -1064,7 +1064,7 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
   </entry>
   <entry>
     <title>Collection、泛型</title>
-    <url>/blog/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/Collection%E3%80%81%E6%B3%9B%E5%9E%8B/day02%E3%80%90Collection%E3%80%81%E6%B3%9B%E5%9E%8B%E3%80%91-%E7%AC%94%E8%AE%B0/</url>
+    <url>/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/Collection%E3%80%81%E6%B3%9B%E5%9E%8B/day02%E3%80%90Collection%E3%80%81%E6%B3%9B%E5%9E%8B%E3%80%91-%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="day02【Collection、泛型】"><a href="#day02【Collection、泛型】" class="headerlink" title="day02【Collection、泛型】"></a>day02【Collection、泛型】</h1><h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><ul>
 <li>Collection集合</li>
 <li>迭代器</li>
@@ -1276,7 +1276,7 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
   </entry>
   <entry>
     <title>File类、递归</title>
-    <url>/blog/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/File%E7%B1%BB%E3%80%81%E9%80%92%E5%BD%92/day08%E3%80%90File%E7%B1%BB%E3%80%81%E9%80%92%E5%BD%92%E3%80%91/</url>
+    <url>/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/File%E7%B1%BB%E3%80%81%E9%80%92%E5%BD%92/day08%E3%80%90File%E7%B1%BB%E3%80%81%E9%80%92%E5%BD%92%E3%80%91/</url>
     <content><![CDATA[<h1 id="day08【File类、递归】"><a href="#day08【File类、递归】" class="headerlink" title="day08【File类、递归】"></a>day08【File类、递归】</h1><h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><ul>
 <li> File类</li>
 <li> 递归</li>
@@ -1450,7 +1450,7 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
   </entry>
   <entry>
     <title>List、Set、数据结构、Collections</title>
-    <url>/blog/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/List%E3%80%81Set%E3%80%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%81Collections/day03%E3%80%90List%E3%80%81Set%E3%80%91/</url>
+    <url>/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/List%E3%80%81Set%E3%80%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%81Collections/day03%E3%80%90List%E3%80%81Set%E3%80%91/</url>
     <content><![CDATA[<h1 id="day03-【List、Set、数据结构、Collections】"><a href="#day03-【List、Set、数据结构、Collections】" class="headerlink" title="day03 【List、Set、数据结构、Collections】"></a>day03 【List、Set、数据结构、Collections】</h1><h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><ul>
 <li>数据结构</li>
 <li>List集合</li>
@@ -1739,7 +1739,7 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
   </entry>
   <entry>
     <title>Map集合</title>
-    <url>/blog/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/day04_Map%EF%BC%8C%E6%96%97%E5%9C%B0%E4%B8%BB%E6%A1%88%E4%BE%8B/day04%20%E3%80%90Map%E3%80%91/</url>
+    <url>/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/day04_Map%EF%BC%8C%E6%96%97%E5%9C%B0%E4%B8%BB%E6%A1%88%E4%BE%8B/day04%20%E3%80%90Map%E3%80%91/</url>
     <content><![CDATA[<h1 id="day04-【Map】"><a href="#day04-【Map】" class="headerlink" title="day04 【Map】"></a>day04 【Map】</h1><h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><ul>
 <li> Map集合</li>
 </ul>
@@ -1964,7 +1964,7 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
   </entry>
   <entry>
     <title>字节流、字符流</title>
-    <url>/blog/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/%E5%AD%97%E8%8A%82%E6%B5%81%E3%80%81%E5%AD%97%E7%AC%A6%E6%B5%81/day09%E3%80%90%E5%AD%97%E8%8A%82%E6%B5%81%E3%80%81%E5%AD%97%E7%AC%A6%E6%B5%81%E3%80%91/</url>
+    <url>/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/%E5%AD%97%E8%8A%82%E6%B5%81%E3%80%81%E5%AD%97%E7%AC%A6%E6%B5%81/day09%E3%80%90%E5%AD%97%E8%8A%82%E6%B5%81%E3%80%81%E5%AD%97%E7%AC%A6%E6%B5%81%E3%80%91/</url>
     <content><![CDATA[<h1 id="day09【字节流、字符流】"><a href="#day09【字节流、字符流】" class="headerlink" title="day09【字节流、字符流】"></a>day09【字节流、字符流】</h1><h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><ul>
 <li>IO流</li>
 <li>字节流</li>
@@ -2307,7 +2307,7 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
   </entry>
   <entry>
     <title>异常、线程</title>
-    <url>/blog/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/%E5%BC%82%E5%B8%B8%E3%80%81%E7%BA%BF%E7%A8%8B/day05%20%E3%80%90%E5%BC%82%E5%B8%B8%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%91/</url>
+    <url>/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/%E5%BC%82%E5%B8%B8%E3%80%81%E7%BA%BF%E7%A8%8B/day05%20%E3%80%90%E5%BC%82%E5%B8%B8%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%91/</url>
     <content><![CDATA[<h1 id="day05-【异常、线程】"><a href="#day05-【异常、线程】" class="headerlink" title="day05 【异常、线程】"></a>day05 【异常、线程】</h1><h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><ul>
 <li>异常、线程</li>
 </ul>
@@ -2562,7 +2562,7 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
   </entry>
   <entry>
     <title>线程池、Lambda表达式</title>
-    <url>/blog/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/%E7%AD%89%E5%BE%85%E4%B8%8E%E5%94%A4%E9%86%92%E6%A1%88%E4%BE%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E6%B1%A0%E3%80%81Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/day07%E3%80%90%E7%AD%89%E5%BE%85%E4%B8%8E%E5%94%A4%E9%86%92%E6%A1%88%E4%BE%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E6%B1%A0%E3%80%81Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E3%80%91/</url>
+    <url>/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/%E7%AD%89%E5%BE%85%E4%B8%8E%E5%94%A4%E9%86%92%E6%A1%88%E4%BE%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E6%B1%A0%E3%80%81Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/day07%E3%80%90%E7%AD%89%E5%BE%85%E4%B8%8E%E5%94%A4%E9%86%92%E6%A1%88%E4%BE%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E6%B1%A0%E3%80%81Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E3%80%91/</url>
     <content><![CDATA[<h1 id="day07【线程池、Lambda表达式】"><a href="#day07【线程池、Lambda表达式】" class="headerlink" title="day07【线程池、Lambda表达式】"></a>day07【线程池、Lambda表达式】</h1><h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><ul>
 <li>  等待与唤醒案例</li>
 <li>  线程池</li>
@@ -2827,7 +2827,7 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
   </entry>
   <entry>
     <title>缓冲流、转换流、序列化流</title>
-    <url>/blog/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/%E7%BC%93%E5%86%B2%E6%B5%81%E3%80%81%E8%BD%AC%E6%8D%A2%E6%B5%81%E3%80%81%E5%BA%8F%E5%88%97%E5%8C%96%E6%B5%81%E3%80%81%E6%89%93%E5%8D%B0%E6%B5%81/day10%E3%80%90%E7%BC%93%E5%86%B2%E6%B5%81%E3%80%81%E8%BD%AC%E6%8D%A2%E6%B5%81%E3%80%81%E5%BA%8F%E5%88%97%E5%8C%96%E6%B5%81%E3%80%81%E6%89%93%E5%8D%B0%E6%B5%81%E3%80%91/</url>
+    <url>/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/%E7%BC%93%E5%86%B2%E6%B5%81%E3%80%81%E8%BD%AC%E6%8D%A2%E6%B5%81%E3%80%81%E5%BA%8F%E5%88%97%E5%8C%96%E6%B5%81%E3%80%81%E6%89%93%E5%8D%B0%E6%B5%81/day10%E3%80%90%E7%BC%93%E5%86%B2%E6%B5%81%E3%80%81%E8%BD%AC%E6%8D%A2%E6%B5%81%E3%80%81%E5%BA%8F%E5%88%97%E5%8C%96%E6%B5%81%E3%80%81%E6%89%93%E5%8D%B0%E6%B5%81%E3%80%91/</url>
     <content><![CDATA[<h1 id="day10【缓冲流、转换流、序列化流】"><a href="#day10【缓冲流、转换流、序列化流】" class="headerlink" title="day10【缓冲流、转换流、序列化流】"></a>day10【缓冲流、转换流、序列化流】</h1><h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><ul>
 <li> 缓冲流</li>
 <li> 转换流</li>
@@ -3059,7 +3059,7 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
   </entry>
   <entry>
     <title>网络编程</title>
-    <url>/blog/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/day11%E3%80%90%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E3%80%91/</url>
+    <url>/2020/08/06/Java%20%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/day11%E3%80%90%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E3%80%91/</url>
     <content><![CDATA[<h1 id="day11【网络编程】"><a href="#day11【网络编程】" class="headerlink" title="day11【网络编程】"></a>day11【网络编程】</h1><h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><ul>
 <li> 软件架构CS／BS</li>
 <li> 网络通信三要素</li>
@@ -3332,7 +3332,7 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
   </entry>
   <entry>
     <title>Java学习路线</title>
-    <url>/blog/2020/08/04/blog_markdown/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
+    <url>/2020/08/04/blog_markdown/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
     <content><![CDATA[<h1 id="学习路线"><a href="#学习路线" class="headerlink" title="学习路线"></a>学习路线</h1><ul>
 <li><a href="https://mp.weixin.qq.com/s/rAoamIey7cARMES7kfIaLw">Java后端开发学习路线</a></li>
 </ul>
@@ -3675,7 +3675,7 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
   </entry>
   <entry>
     <title>我的简历</title>
-    <url>/blog/2021/06/18/%E6%88%91%E7%9A%84%E7%AE%80%E5%8E%86/</url>
+    <url>/2021/06/18/%E6%88%91%E7%9A%84%E7%AE%80%E5%8E%86/</url>
     <content><![CDATA[<head> 
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script> 
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js"></script> 
@@ -3855,7 +3855,7 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
   </entry>
   <entry>
     <title></title>
-    <url>/blog/2021/06/27/%E8%BF%98%E6%B2%A1%E6%9C%89%E5%88%86%E7%B1%BB%E5%8A%A0%E6%A0%87%E9%A2%98%E7%9A%84/%E9%85%8D%E7%BD%AE/</url>
+    <url>/2021/06/27/%E8%BF%98%E6%B2%A1%E6%9C%89%E5%88%86%E7%B1%BB%E5%8A%A0%E6%A0%87%E9%A2%98%E7%9A%84/%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="配置当前项目"><a href="#配置当前项目" class="headerlink" title="配置当前项目"></a>配置当前项目</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config user.name <span class="string">&#x27;你的名字&#x27;</span></span><br><span class="line">git config user.email <span class="string">&#x27;你的邮箱&#x27;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="修改全局配置"><a href="#修改全局配置" class="headerlink" title="修改全局配置"></a>修改全局配置</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git --global config user.name <span class="string">&#x27;你的名字&#x27;</span></span><br><span class="line">git --global config user.email <span class="string">&#x27;你的邮箱&#x27;</span></span><br></pre></td></tr></table></figure>
