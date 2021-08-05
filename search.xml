@@ -838,7 +838,7 @@ docker update --restart=always 【容器名】
       </tags>
   </entry>
   <entry>
-    <title>macAPP和package安装</title>
+    <title>mac-app-package</title>
     <url>/2021/06/28/%E7%83%AD%E6%9B%B4%E6%96%B0/mac-app-package/</url>
     <content><![CDATA[<p>###########APP安装(可全选梭哈到终端安装)##########</p>
 <p>################################/usr/local/Caskroom###########</p>
