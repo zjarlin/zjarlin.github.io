@@ -1,0 +1,270 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>docker环境搭建手册 | +0)の部落阁</title><meta name="keywords" content="docker"><meta name="author" content="+0"><meta name="copyright" content="+0"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="#docker 1234567891011121314151617181920212223242526272829303132333435363738394041brew install docker --cask #mysql 端口3306#docker pull centos&#x2F;mysql-57-centos7docker run -p 3306:3306 --name mysql \-v &#x2F;m">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docker环境搭建手册">
+<meta property="og:url" content="https://zjarlin.github.io/2020/07/30/docker%E6%89%8B%E5%86%8C/docker%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%89%8B%E5%86%8C/index.html">
+<meta property="og:site_name" content="+0)の部落阁">
+<meta property="og:description" content="#docker 1234567891011121314151617181920212223242526272829303132333435363738394041brew install docker --cask #mysql 端口3306#docker pull centos&#x2F;mysql-57-centos7docker run -p 3306:3306 --name mysql \-v &#x2F;m">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/007S8ZIlly1gh7u1f4zyjj30hs0judgy.jpg">
+<meta property="article:published_time" content="2020-07-30T13:08:43.000Z">
+<meta property="article:modified_time" content="2021-08-04T09:20:19.494Z">
+<meta property="article:author" content="+0">
+<meta property="article:tag" content="docker">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/007S8ZIlly1gh7u1f4zyjj30hs0judgy.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://zjarlin.github.io/2020/07/30/docker%E6%89%8B%E5%86%8C/docker%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%89%8B%E5%86%8C/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-08-04 17:20:19'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><div class="aplayer no-destroy" data-id="8093266236" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/static-butterfly/dist/css/index.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.css"/><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://tva1.sinaimg.cn/large/007S8ZIlly1gh7u1f4zyjj30hs0judgy.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">22</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">+0)の部落阁</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">docker环境搭建手册</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-07-30T13:08:43.000Z" title="发表于 2020-07-30 21:08:43">2020-07-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-08-04T09:20:19.494Z" title="更新于 2021-08-04 17:20:19">2021-08-04</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/docker%E6%89%8B%E5%86%8C/">docker手册</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="docker环境搭建手册"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div><article class="post-content" id="article-container"><p>#docker</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">brew install docker --cask </span><br><span class="line"><span class="comment">#mysql 端口3306</span></span><br><span class="line"><span class="comment">#docker pull centos/mysql-57-centos7</span></span><br><span class="line">docker run -p 3306:3306 --name mysql \</span><br><span class="line">-v /mydata/mysql/<span class="built_in">log</span>:/var/<span class="built_in">log</span>/mysql \</span><br><span class="line">-v /mydata/mysql/data:/var/lib/mysql \</span><br><span class="line">-v /mydata/mysql/conf:/etc/mysql \</span><br><span class="line">-e MYSQL_ROOT_PASSWORD=123456 \</span><br><span class="line">-d mysql:5.7</span><br><span class="line"><span class="comment">#redis 端口6379</span></span><br><span class="line">docker run -itd --name redis-test -p 6379:6379 redis</span><br><span class="line"><span class="comment">#ngnix+keepalived</span></span><br><span class="line"><span class="comment">#docker pull nginx+</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#rabbitMQ 端口为15672</span></span><br><span class="line">docker run -it --rm \</span><br><span class="line">--name rabbitmq \</span><br><span class="line">-p 5672:5672 \</span><br><span class="line">-p 15672:15672 \</span><br><span class="line">rabbitmq:3-management</span><br><span class="line"></span><br><span class="line">docker run -itd \</span><br><span class="line">--name rabbitmq \</span><br><span class="line">-p 5672:5672 \</span><br><span class="line">-p 15672:15672 \</span><br><span class="line">-e RABBITMQ_DEFAULT_USER=admin \</span><br><span class="line">-e RABBITMQ_DEFAULT_PASS=admin \</span><br><span class="line">rabbitmq:3.7.8-management</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">docker run -di \</span><br><span class="line">--name myrabbit \</span><br><span class="line">-e RABBITMQ_DEFAULT_USER=admin \</span><br><span class="line">-e RABBITMQ_DEFAULT_PASS=admin \</span><br><span class="line">-p 15672:15672 \</span><br><span class="line">-p 5672:5672 \</span><br><span class="line">-p 25672:25672 \</span><br><span class="line">-p 61613:61613 \</span><br><span class="line">-p 1883:1883 \</span><br><span class="line">rabbitmq:management</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>#rabbit配置文件</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">&#x27;3&#x27;</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">rabbitmq:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">rabbitmq:management</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">myrabbitmq</span></span><br><span class="line">    <span class="attr">hostname:</span> <span class="string">myrabbitmq</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">always</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">5672</span><span class="string">:5672</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">15672</span><span class="string">:15672</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/var/docker/rabbitmq/data:/var/lib/rabbitmq</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">RABBITMQ_DEFAULT_USER=admin</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">RABBITMQ_DEFAULT_PASS=123456</span></span><br></pre></td></tr></table></figure>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">+0</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://zjarlin.github.io/2020/07/30/docker%E6%89%8B%E5%86%8C/docker%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%89%8B%E5%86%8C/">https://zjarlin.github.io/2020/07/30/docker%E6%89%8B%E5%86%8C/docker%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%89%8B%E5%86%8C/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://zjarlin.github.io" target="_blank">+0)の部落阁</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/docker/">docker</a></div><div class="post_share"><div class="social-share" data-image="https://tva1.sinaimg.cn/large/007S8ZIlly1gh7u1f4zyjj30hs0judgy.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2020/07/30/docker%E6%89%8B%E5%86%8C/docker%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB%E5%92%8C%E5%A4%87%E4%BB%BD/"><img class="prev-cover" src="https://gitee.com/zjarlin/cdn/raw/master/uPic/21.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">将Docker容器转移至另一服务器</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2020/07/30/docker手册/docker手册/" title="docker手册"><img class="cover" src="https://gitee.com/zjarlin/cdn/raw/master/uPic/3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-30</div><div class="title">docker手册</div></div></a></div><div><a href="/2020/07/30/docker手册/docker数据迁移和备份/" title="将Docker容器转移至另一服务器"><img class="cover" src="https://gitee.com/zjarlin/cdn/raw/master/uPic/21.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-30</div><div class="title">将Docker容器转移至另一服务器</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://tva1.sinaimg.cn/large/007S8ZIlly1gh7u1f4zyjj30hs0judgy.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">+0</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">22</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://space.bilibili.com/393330890"><i class="fab fa-bimobject"></i><span>MyBilibili</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://gitee.com/zjarlin" target="_blank" title="Gitee"><i class="fab fa-git"></i></a><a class="social-icon" href="mailto:zjarlin@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://github.com/zjarlin" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">浏览前注意关闭第三方渲染呦!(如浏览器黑夜模式)</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/07/30/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/" title="个人简历"><img src="https://gitee.com/zjarlin/cdn/raw/master/uPic/11.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="个人简历"/></a><div class="content"><a class="title" href="/2021/07/30/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/" title="个人简历">个人简历</a><time datetime="2021-07-30T10:26:52.000Z" title="发表于 2021-07-30 18:26:52">2021-07-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/30/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84-Emoji-%E7%AC%A6%E5%8F%B7%EF%BC%88%E5%8F%AF%E7%9B%B4%E6%8E%A5%E5%A4%8D%E5%88%B6%EF%BC%89/" title="一些常用的 Emoji 符号（可直接复制）"><img src="https://gitee.com/zjarlin/cdn/raw/master/uPic/16.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一些常用的 Emoji 符号（可直接复制）"/></a><div class="content"><a class="title" href="/2021/06/30/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84-Emoji-%E7%AC%A6%E5%8F%B7%EF%BC%88%E5%8F%AF%E7%9B%B4%E6%8E%A5%E5%A4%8D%E5%88%B6%EF%BC%89/" title="一些常用的 Emoji 符号（可直接复制）">一些常用的 Emoji 符号（可直接复制）</a><time datetime="2021-06-30T10:59:36.000Z" title="发表于 2021-06-30 18:59:36">2021-06-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/30/Swagger%E6%B3%A8%E8%A7%A3/" title="Swagger注解"><img src="https://gitee.com/zjarlin/cdn/raw/master/uPic/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Swagger注解"/></a><div class="content"><a class="title" href="/2021/06/30/Swagger%E6%B3%A8%E8%A7%A3/" title="Swagger注解">Swagger注解</a><time datetime="2021-06-30T10:59:36.000Z" title="发表于 2021-06-30 18:59:36">2021-06-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/30/%E5%B0%86%E8%8F%9C%E5%8D%95%E9%81%8D%E5%8E%86%E6%88%90%E6%A0%91/" title="将多级菜单遍历成树"><img src="https://gitee.com/zjarlin/cdn/raw/master/uPic/26.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="将多级菜单遍历成树"/></a><div class="content"><a class="title" href="/2021/06/30/%E5%B0%86%E8%8F%9C%E5%8D%95%E9%81%8D%E5%8E%86%E6%88%90%E6%A0%91/" title="将多级菜单遍历成树">将多级菜单遍历成树</a><time datetime="2021-06-30T10:59:36.000Z" title="发表于 2021-06-30 18:59:36">2021-06-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/30/%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6%E5%88%B0linux/" title="拷贝文件到linux"><img src="https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="拷贝文件到linux"/></a><div class="content"><a class="title" href="/2021/06/30/%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6%E5%88%B0linux/" title="拷贝文件到linux">拷贝文件到linux</a><time datetime="2021-06-30T10:59:36.000Z" title="发表于 2021-06-30 18:59:36">2021-06-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By +0</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'CyYoxOPBQcLWNNDkQaxsm9Si-gzGzoHsz',
+      appKey: '2KnP7JHovn33TTLW9dTRjStE',
+      placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: 'https://valinecdn.bili33.top/',
+      emojiMaps: {"bilibilitv2":"bilibilitv/[tv_doge].png","bilibilitv3":"bilibilitv/[tv_亲亲].png","bilibilitv4":"bilibilitv/[tv_偷笑].png","bilibilitv5":"bilibilitv/[tv_再见].png","bilibilitv6":"bilibilitv/[tv_冷漠].png","bilibilitv7":"bilibilitv/[tv_发怒].png","bilibilitv8":"bilibilitv/[tv_发财].png","bilibilitv9":"bilibilitv/[tv_可爱].png","bilibilitv10":"bilibilitv/[tv_吐血].png","bilibilitv11":"bilibilitv/[tv_呆].png","bilibilitv12":"bilibilitv/[tv_呕吐].png","bilibilitv13":"bilibilitv/[tv_困].png","bilibilitv14":"bilibilitv/[tv_坏笑].png","bilibilitv15":"bilibilitv/[tv_大佬].png","bilibilitv16":"bilibilitv/[tv_大哭].png","bilibilitv17":"bilibilitv/[tv_委屈].png","bilibilitv18":"bilibilitv/[tv_害羞].png","bilibilitv19":"bilibilitv/[tv_尴尬].png","bilibilitv20":"bilibilitv/[tv_微笑].png","bilibilitv21":"bilibilitv/[tv_思考].png","bilibilitv22":"bilibilitv/[tv_惊吓].png","bilibilitv23":"bilibilitv/[tv_打脸].png","bilibilitv24":"bilibilitv/[tv_抓狂].png","bilibilitv25":"bilibilitv/[tv_抠鼻].png","bilibilitv26":"bilibilitv/[tv_斜眼笑].png","bilibilitv27":"bilibilitv/[tv_无奈].png","bilibilitv28":"bilibilitv/[tv_晕].png","bilibilitv29":"bilibilitv/[tv_流汗].png","bilibilitv30":"bilibilitv/[tv_流泪].png","bilibilitv31":"bilibilitv/[tv_流鼻血].png","bilibilitv32":"bilibilitv/[tv_点赞].png","bilibilitv33":"bilibilitv/[tv_生气].png","bilibilitv34":"bilibilitv/[tv_生病].png","bilibilitv35":"bilibilitv/[tv_疑问].png","bilibilitv36":"bilibilitv/[tv_白眼].png","bilibilitv37":"bilibilitv/[tv_皱眉].png","bilibilitv38":"bilibilitv/[tv_目瞪口呆].png","bilibilitv39":"bilibilitv/[tv_睡着].png","bilibilitv40":"bilibilitv/[tv_笑哭].png","bilibilitv41":"bilibilitv/[tv_腼腆].png","bilibilitv42":"bilibilitv/[tv_色].png","bilibilitv43":"bilibilitv/[tv_调侃].png","bilibilitv44":"bilibilitv/[tv_调皮].png","bilibilitv45":"bilibilitv/[tv_鄙视].png","bilibilitv46":"bilibilitv/[tv_闭嘴].png","bilibilitv47":"bilibilitv/[tv_难过].png","bilibilitv48":"bilibilitv/[tv_馋].png","bilibilitv49":"bilibilitv/[tv_鬼脸].png","bilibilitv50":"bilibilitv/[tv_黑人问号].png","bilibilitv51":"bilibilitv/[tv_鼓掌].png","bilibili22332":"bilibili2233/[2233娘_卖萌].png","bilibili22333":"bilibili2233/[2233娘_吃惊].png","bilibili22334":"bilibili2233/[2233娘_吐魂].png","bilibili22335":"bilibili2233/[2233娘_喝水].png","bilibili22336":"bilibili2233/[2233娘_困惑].png","bilibili22337":"bilibili2233/[2233娘_大哭].png","bilibili22338":"bilibili2233/[2233娘_大笑].png","bilibili22339":"bilibili2233/[2233娘_委屈].png","bilibili223310":"bilibili2233/[2233娘_怒].png","bilibili223311":"bilibili2233/[2233娘_无言].png","bilibili223312":"bilibili2233/[2233娘_汗].png","bilibili223313":"bilibili2233/[2233娘_疑问].png","bilibili223314":"bilibili2233/[2233娘_第一].png","bilibili223315":"bilibili2233/[2233娘_耶].png","bilibili223316":"bilibili2233/[2233娘_郁闷].png","HONKAI3-MEI1":"HONKAI3-MEI/501ac209b259bb545dea898838c24229483fcfeb.gif","HONKAI3-MEI2":"HONKAI3-MEI/5baf4306d1f685bf47922fbae365ccfba7721beb.gif","HONKAI3-MEI3":"HONKAI3-MEI/624857651c863ea9571f5e557fca8516dd41e0fc.gif","HONKAI3-MEI4":"HONKAI3-MEI/680311714674014d0c17f757eb40c3071448222a.gif","HONKAI3-MEI5":"HONKAI3-MEI/bf68423446465d396d3cbd8856882b5e9fb1c0c7.gif","HONKAI3-MEI6":"HONKAI3-MEI/d3a2a9c6ad1e2a0b262dca9354ab8de736d81cdf.gif","HONKAI3-MEI7":"HONKAI3-MEI/dd0fd1f3668f4907c9f6fcd39c6138417ac0e1f5.gif"},
+      enableQQ: true,
+      path: window.location.pathname,
+      requiredFields: ["+0,zjarlin@outlook.com"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script src='https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/js/mouse_snow.min.js'></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>function electric_clock_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>';
+                console.log('已挂载electric_clock')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            electric_clock_injector_config()
+        } </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax  src="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.js"></script><!-- hexo injector body_end end --></body></html>
